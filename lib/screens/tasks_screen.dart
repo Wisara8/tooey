@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class TasksScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.blue,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.lightBlueAccent,
+        body: Column(
+          children: <Widget>[Icon(Icons.list), Text("Todooey Tooey")],
+        ),
+      ),
     );
   }
 }
