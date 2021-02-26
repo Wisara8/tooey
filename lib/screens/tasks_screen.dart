@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:todooeytooey/widgets/tasks_list.dart';
+import 'package:todooeytooey/screens/add_tasks_screen.dart';
 
 class TasksScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +11,7 @@ class TasksScreen extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet(
             context: context,
-            builder: buildBottomSheet,
+            builder: (context) => AddTasksScreen(),
           );
         },
         backgroundColor: Colors.lightBlueAccent,
