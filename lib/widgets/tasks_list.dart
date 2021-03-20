@@ -12,6 +12,7 @@ class _TasksListState extends State<TasksList> {
     Task(name: "Buy Milk"),
     Task(name: "Buy Gas"),
     Task(name: "Buy House"),
+    Task(name: "Sell House"),
   ];
 
   @override
