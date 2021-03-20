@@ -33,7 +33,7 @@ class AddTasksScreen extends StatelessWidget {
             ),
             FlatButton(
               onPressed: () {
-                print(newTaskTitle);
+                addTaskCallback(newTaskTitle);
               },
               child: Text(
                 "Add",
