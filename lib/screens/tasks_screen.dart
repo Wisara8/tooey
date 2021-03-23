@@ -61,7 +61,7 @@ class _TasksScreenState extends State<TasksScreen> {
                   height: 10,
                 ),
                 Text(
-                  "Todooey Tooey V2",
+                  "Todooey Tooey V3",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,
