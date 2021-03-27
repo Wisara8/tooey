@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "155081374581",
+    "project_id": "loginapp-8a1aa",
+    "storage_bucket": "loginapp-8a1aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155081374581:android:fb29b6d8db6ef86c9e313c",
+        "android_client_info": {
+          "package_name": "wisara.todooeytooey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155081374581-em8amvsir7clmob1p020gogbk6bqkbco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXistfB_jeQa9zhZPltXN-F9XV-_TCl2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155081374581-em8amvsir7clmob1p020gogbk6bqkbco.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "155081374581-qm5d79h3offbp3lhnpvui4l7i4l5sgqo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
