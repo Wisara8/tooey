@@ -56,7 +56,7 @@ class _SignupState extends State<Signup> {
   Widget get passWordTextField => Container(
       padding: EdgeInsets.all(16),
       child: TextFormField(
-        decoration: InputDecoration(hintText: "Enter Email"),
+        decoration: InputDecoration(hintText: "Enter Password"),
         obscureText: true,
         validator: (val) {
           if (val.isEmpty) {
