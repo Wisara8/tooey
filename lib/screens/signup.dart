@@ -11,6 +11,7 @@ class _SignupState extends State<Signup> {
 
   String _email;
   String _password;
+  String _name;
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +28,10 @@ class _SignupState extends State<Signup> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              nameField,
+              Container(
+                height: 16,
+              ),
               emailTextfield,
               Container(
                 height: 16,
@@ -72,6 +77,21 @@ class _SignupState extends State<Signup> {
         ),
       );
 
+  Widget get nameField => Container(
+        padding: EdgeInsets.all(16),
+        child: TextFormField(
+          decoration: InputDecoration(hintText: "Enter Name"),
+          validator: (val) {
+            if (val.isEmpty) {
+              return 'Enter Name';
+            } else {
+              _name = val;
+            }
+            return null;
+          },
+        ),
+      );
+
   Widget get loginButton => RaisedButton(
         onPressed: () => Signup(),
         child: Text('Lets signin'),
@@ -90,7 +110,7 @@ class _SignupState extends State<Signup> {
 
   void Signup() {
     if (_formKey.currentState.validate()) {
-      Auth.signup(email: _email, password: _password);
+      Auth.signup(email: _email, password: _password, name: _name);
     } else {
       debugPrint("Login Fail");
     }
