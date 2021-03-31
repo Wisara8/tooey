@@ -15,58 +15,62 @@ class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Center(
-      child: loginForm,
-    ));
+      body: Center(
+        child: loginForm,
+      ),
+    );
   }
 
   Widget get loginForm => Form(
         key: _formKey,
         child: SingleChildScrollView(
-            child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            emailTextfield,
-            Container(
-              height: 16,
-            ),
-            passWordTextField,
-            Container(
-              height: 16,
-            ),
-            loginButton
-          ],
-        )),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              emailTextfield,
+              Container(
+                height: 16,
+              ),
+              passWordTextField,
+              Container(
+                height: 16,
+              ),
+              loginButton
+            ],
+          ),
+        ),
       );
 
   Widget get emailTextfield => Container(
-      padding: EdgeInsets.all(16),
-      child: TextFormField(
-        decoration: InputDecoration(hintText: "Enter Email"),
-        validator: (val) {
-          if (val.isEmpty) {
-            return 'Enter Email';
-          } else {
-            _email = val;
-          }
-          return null;
-        },
-      ));
+        padding: EdgeInsets.all(16),
+        child: TextFormField(
+          decoration: InputDecoration(hintText: "Enter Email"),
+          validator: (val) {
+            if (val.isEmpty) {
+              return 'Enter Email';
+            } else {
+              _email = val;
+            }
+            return null;
+          },
+        ),
+      );
 
   Widget get passWordTextField => Container(
-      padding: EdgeInsets.all(16),
-      child: TextFormField(
-        decoration: InputDecoration(hintText: "Enter Password"),
-        obscureText: true,
-        validator: (val) {
-          if (val.isEmpty) {
-            return 'Enter Password';
-          } else {
-            _password = val;
-          }
-          return null;
-        },
-      ));
+        padding: EdgeInsets.all(16),
+        child: TextFormField(
+          decoration: InputDecoration(hintText: "Enter Password"),
+          obscureText: true,
+          validator: (val) {
+            if (val.isEmpty) {
+              return 'Enter Password';
+            } else {
+              _password = val;
+            }
+            return null;
+          },
+        ),
+      );
 
   Widget get loginButton => RaisedButton(
         onPressed: () => Signup(),
